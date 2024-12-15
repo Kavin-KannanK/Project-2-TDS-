@@ -22,7 +22,7 @@ def main():
 
     # Load dataset
     try:
-        data = pd.read_csv(csv_file)
+        data = pd.read_csv(csv_file,engine ='python',encoding='unicode_escape')
     except Exception as e:
         print(f"Error loading CSV: {e}")
         sys.exit(1)
